@@ -1,0 +1,23 @@
+<div class="content-section">
+    <form action="/posts" method="POST" class="col s12">
+		<fieldset class="form-group">
+                <legend class="border-bottom mb-4"><h2>ADD POST</h2></legend>
+                <div class="form-group">
+					<div class="input-field">
+						<label for="title" class="form-control-label"><h5>Title</h5></label></br>
+						<input type="text" id="title" name="title">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-field">
+						<h5 class="form-control-label">Write Your Post</h5>
+						<textarea id="body" name="body"></textarea>
+					</div>
+				</div>
+        </fieldset>
+        <div class="form-group">
+            <input class="btn btn-outline-info" type="submit" value="Save" class="btn">
+            <a class="btn btn-danger" href="/">Cancel</a>
+        </div>
+    </form>
+</div>

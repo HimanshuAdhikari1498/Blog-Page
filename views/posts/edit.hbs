@@ -1,0 +1,26 @@
+<div class="content-section">
+    <form action="/posts/{{post._id}}" method="POST" class="col s12">
+		<fieldset class="form-group">
+			<legend class="border-bottom mb-4"><h2>EDIT POST</h2></legend>
+			<input type="hidden" name="_method" value="PUT">
+			<div class="form-group">
+				<div class="input-field">
+					<label for="title" class="form-control-label"><h5>Title</h5></label></br>
+					<input type="text" id="title" name="title" value="{{post.title}}">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="input-field">
+					<h5 class="form-control-label">Write Your Post</h5>
+					<textarea id="body" name="body">{{post.body}}</textarea>
+				</div>
+			</div>
+		</fieldset>
+
+        <div class="form-group">
+            <input class="btn btn-outline-info" type="submit" value="Update" class="btn">
+            <a href="/dashboard" class="btn btn-danger">Cancel</a>
+        </div>
+    </form>
+</div>

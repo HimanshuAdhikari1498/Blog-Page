@@ -1,0 +1,17 @@
+{{#each posts}}
+    <article class="media content-section">
+		<img class="rounded-circle article-img" src="{{user.image}}">
+		<div class="media-body">
+            <div class="article-metadata">
+				<h2 class="article-title">{{title}}</h2>
+				<div class="chip">
+                    <a href="/posts/user/{{user._id}}">{{user.displayName}}</a>
+                </div>
+			</div>
+			<a style="float:right" href="/posts/{{_id}}" class="btn grey">Read More</a>
+			<p class="article-content">{{stripTags (truncate body 150)}}</p>
+        </div>
+    </article>
+    {{else}}
+    <p>No Posts to display</p>
+{{/each}}
